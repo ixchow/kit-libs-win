@@ -8,4 +8,4 @@ update_glm.bat
 SDL2
 ----
 Download a source snapshot into 'SDL2'
-
+build_sdl.bat
