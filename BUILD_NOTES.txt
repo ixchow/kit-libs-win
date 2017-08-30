@@ -1,0 +1,11 @@
+Libraries for windows.
+
+glm
+---
+update_glm.bat
+(Udates the submodule, then copies header files.)
+
+SDL2
+----
+Download a source snapshot into 'SDL2'
+
