@@ -1,5 +1,15 @@
 Libraries for windows.
 
+zlib
+----
+build_zlib.bat
+
+
+libpng
+------
+(modify makefile to point to ../out/zlib)
+build_libpng.bat
+
 glm
 ---
 update_glm.bat
