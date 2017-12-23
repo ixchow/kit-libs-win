@@ -195,7 +195,7 @@ namespace detail
 		GLM_FUNC_QUALIFIER static vec<L, T, Q> call(vec<L, T, Q> const& x)
 		{
 			T const Shift(static_cast<T>(sizeof(T) * 8 - 1));
-			vec<L, T, Q> const y(vec<L, typename make_unsigned<T>::type, P>(-x) >> typename make_unsigned<T>::type(Shift));
+			vec<L, T, Q> const y(vec<L, typename make_unsigned<T>::type, Q>(-x) >> typename make_unsigned<T>::type(Shift));
 
 			return (x >> Shift) | y;
 		}
@@ -582,7 +582,7 @@ namespace detail
 	template<typename genType>
 	GLM_FUNC_QUALIFIER genType step(genType edge, genType x)
 	{
-		return mix(static_cast<genType>(1), static_cast<genType>(0), glm::lessThan(x, edge));
+		return mix(static_cast<genType>(1), static_cast<genType>(0), x < edge);
 	}
 
 	template<length_t L, typename T, qualifier Q>
