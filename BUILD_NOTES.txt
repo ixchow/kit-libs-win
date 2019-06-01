@@ -29,4 +29,8 @@ AWKWARD: isn't using /MT runtime!
 History cleanup
 ---------------
 git checkout --orphan temp master
-...
+git commit -m"cleaning history"
+git branch -D master
+git branch -m master
+git push -f origin master
+git branch --set-upstream-to=origin/master master
