@@ -1,0 +1,32 @@
+Libraries for windows.
+
+zlib
+----
+build_zlib.bat
+
+
+libpng
+------
+(modify makefile to point to ../out/zlib)
+build_libpng.bat
+
+glm
+---
+update_glm.bat
+(Udates the submodule, then copies header files.)
+
+SDL2
+----
+build_sdl2.bat
+
+libjpeg-turbo
+-------------
+Unfortunately, a CMake build that also requires YASM or NASM. So a fair bit of setup to rebuild.
+Install NASM.
+Install CMake to path.
+AWKWARD: isn't using /MT runtime!
+
+History cleanup
+---------------
+git checkout --orphan temp master
+...
